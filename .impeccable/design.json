@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T01:10:49.647Z",
+  "title": "Design System: Charleston Caves",
+  "extensions": {
+    "colorMeta": {
+      "bronze": {
+        "role": "primary",
+        "displayName": "Bronze",
+        "tonalRamp": [
+          "oklch(0.15 0.0716 74.94)",
+          "oklch(0.26 0.0716 74.94)",
+          "oklch(0.38 0.0716 74.94)",
+          "oklch(0.49 0.0716 74.94)",
+          "oklch(0.61 0.0716 74.94)",
+          "oklch(0.72 0.0716 74.94)",
+          "oklch(0.84 0.0716 74.94)",
+          "oklch(0.95 0.0716 74.94)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(0.15 0.0068 78.14)",
+          "oklch(0.26 0.0068 78.14)",
+          "oklch(0.38 0.0068 78.14)",
+          "oklch(0.49 0.0068 78.14)",
+          "oklch(0.61 0.0068 78.14)",
+          "oklch(0.72 0.0068 78.14)",
+          "oklch(0.84 0.0068 78.14)",
+          "oklch(0.95 0.0068 78.14)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(0.15 0.0099 67.28)",
+          "oklch(0.26 0.0099 67.28)",
+          "oklch(0.38 0.0099 67.28)",
+          "oklch(0.49 0.0099 67.28)",
+          "oklch(0.61 0.0099 67.28)",
+          "oklch(0.72 0.0099 67.28)",
+          "oklch(0.84 0.0099 67.28)",
+          "oklch(0.95 0.0099 67.28)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(0.15 0.0206 81.78)",
+          "oklch(0.26 0.0206 81.78)",
+          "oklch(0.38 0.0206 81.78)",
+          "oklch(0.49 0.0206 81.78)",
+          "oklch(0.61 0.0206 81.78)",
+          "oklch(0.72 0.0206 81.78)",
+          "oklch(0.84 0.0206 81.78)",
+          "oklch(0.95 0.0206 81.78)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(0.15 0.0268 78.87)",
+          "oklch(0.26 0.0268 78.87)",
+          "oklch(0.38 0.0268 78.87)",
+          "oklch(0.49 0.0268 78.87)",
+          "oklch(0.61 0.0268 78.87)",
+          "oklch(0.72 0.0268 78.87)",
+          "oklch(0.84 0.0268 78.87)",
+          "oklch(0.95 0.0268 78.87)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(0.15 0.0183 74.02)",
+          "oklch(0.26 0.0183 74.02)",
+          "oklch(0.38 0.0183 74.02)",
+          "oklch(0.49 0.0183 74.02)",
+          "oklch(0.61 0.0183 74.02)",
+          "oklch(0.72 0.0183 74.02)",
+          "oklch(0.84 0.0183 74.02)",
+          "oklch(0.95 0.0183 74.02)"
+        ]
+      },
+      "parchment": {
+        "role": "neutral",
+        "displayName": "Parchment",
+        "tonalRamp": [
+          "oklch(0.15 0.0294 82.59)",
+          "oklch(0.26 0.0294 82.59)",
+          "oklch(0.38 0.0294 82.59)",
+          "oklch(0.49 0.0294 82.59)",
+          "oklch(0.61 0.0294 82.59)",
+          "oklch(0.72 0.0294 82.59)",
+          "oklch(0.84 0.0294 82.59)",
+          "oklch(0.95 0.0294 82.59)"
+        ]
+      },
+      "parchment-ink": {
+        "role": "neutral",
+        "displayName": "Parchment Ink",
+        "tonalRamp": [
+          "oklch(0.15 0.0190 73.86)",
+          "oklch(0.26 0.0190 73.86)",
+          "oklch(0.38 0.0190 73.86)",
+          "oklch(0.49 0.0190 73.86)",
+          "oklch(0.61 0.0190 73.86)",
+          "oklch(0.72 0.0190 73.86)",
+          "oklch(0.84 0.0190 73.86)",
+          "oklch(0.95 0.0190 73.86)"
+        ]
+      },
+      "parchment-muted": {
+        "role": "neutral",
+        "displayName": "Parchment Muted",
+        "tonalRamp": [
+          "oklch(0.15 0.0359 68.33)",
+          "oklch(0.26 0.0359 68.33)",
+          "oklch(0.38 0.0359 68.33)",
+          "oklch(0.49 0.0359 68.33)",
+          "oklch(0.61 0.0359 68.33)",
+          "oklch(0.72 0.0359 68.33)",
+          "oklch(0.84 0.0359 68.33)",
+          "oklch(0.95 0.0359 68.33)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Homepage headline."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Major section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Room captions and finish names."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs and explanations."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Forms, navigation and finish controls."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Direct interaction and hero arrival easing."
+      },
+      {
+        "name": "button",
+        "value": "250ms",
+        "purpose": "Button fill and lift."
+      },
+      {
+        "name": "gallery",
+        "value": "800ms",
+        "purpose": "Photograph scale and brightness."
+      },
+      {
+        "name": "hero-arrival",
+        "value": "1.1s",
+        "purpose": "One initial arrival; disabled for reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile",
+        "value": "680px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The ivory action used for inquiry and room planning.",
+      "html": "<button class=\"ds-button\">Start the conversation <span aria-hidden=\"true\">↗</span></button>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:space-between;gap:38px;min-height:54px;padding:15px 23px;background:var(--paper,#f0e8da);color:var(--ink,#14120f);border:0;border-radius:4px;font-family:var(--sans,'Inter Tight',Arial,sans-serif);font-size:14px;font-weight:500;cursor:pointer;transition:background .25s,transform .25s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-button span{font-size:20px;line-height:1}.ds-button:hover{background:#d9bc95;transform:translateY(-2px)}.ds-button:active{transform:translateY(0)}.ds-button:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:5px}.ds-button:disabled{opacity:.65;cursor:wait;transform:none}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "button",
+      "description": "A bronze-ruled secondary action.",
+      "html": "<a class=\"ds-link\" href=\"#\">Explore a finish direction <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-link{display:inline-flex;align-items:center;gap:26px;padding:10px 0;border-bottom:1px solid var(--bronze,#c8a77a);color:var(--paper,#f0e8da);font-family:var(--sans,'Inter Tight',Arial,sans-serif);font-size:14px;text-decoration:none}.ds-link:hover{color:var(--bronze,#c8a77a)}.ds-link:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:5px}"
+    },
+    {
+      "name": "Labeled Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "A dark field with a readable label and bronze focus.",
+      "html": "<label class=\"ds-label\">Email<input class=\"ds-input\" type=\"email\" placeholder=\"you@example.com\"></label>",
+      "css": ".ds-label{display:flex;flex-direction:column;gap:8px;color:var(--paper,#f0e8da);font-family:var(--sans,'Inter Tight',Arial,sans-serif);font-size:13px}.ds-input{min-width:0;color:var(--paper,#f0e8da);background:#14120f80;border:1px solid #74634e;border-radius:4px;padding:12px 14px;font-family:var(--sans,'Inter Tight',Arial,sans-serif);font-size:16px;transition:border-color .2s}.ds-input::placeholder{color:#b1a38f;opacity:1}.ds-input:hover{border-color:var(--bronze,#c8a77a)}.ds-input:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-input{transition:none}}"
+    },
+    {
+      "name": "Finish Choices",
+      "kind": "chip",
+      "refersTo": "palette-option",
+      "description": "Native radio labels invert when selected.",
+      "html": "<fieldset class=\"ds-palettes\"><legend>Choose a finish direction</legend><label><input type=\"radio\" name=\"ds-palette\" checked><span>The Club</span></label><label><input type=\"radio\" name=\"ds-palette\"><span>The Library</span></label></fieldset>",
+      "css": ".ds-palettes{display:flex;flex-wrap:wrap;gap:10px;padding:0;border:0;font-family:var(--sans,'Inter Tight',Arial,sans-serif)}.ds-palettes legend{color:var(--muted,#bdb2a1);font-size:13px;margin-bottom:12px}.ds-palettes label{position:relative}.ds-palettes input{position:absolute;opacity:0;width:1px;height:1px}.ds-palettes span{display:block;padding:10px 14px;border:1px solid #786651;border-radius:4px;color:var(--paper,#f0e8da);font-size:13px;cursor:pointer}.ds-palettes input:checked+span{background:var(--paper,#f0e8da);color:var(--ink,#14120f);border-color:var(--paper,#f0e8da)}.ds-palettes input:focus-visible+span{outline:2px solid var(--bronze,#c8a77a);outline-offset:4px}.ds-palettes span:hover{border-color:var(--paper,#f0e8da)}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Translucent warm navigation with a serif wordmark.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-wordmark\" href=\"#\">Charleston <em>Caves</em><i>.</i></a><a class=\"ds-contact\" href=\"#\">Let’s talk ↗</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 22px 16px 28px;border:1px solid #ffffff24;border-radius:12px;background:#1e1a16b8;backdrop-filter:blur(22px);color:var(--paper,#f0e8da)}.ds-nav a{color:inherit;text-decoration:none}.ds-wordmark{font-family:var(--serif,'Instrument Serif',Georgia,serif);font-size:29px;line-height:1.1;white-space:nowrap}.ds-wordmark em{font-weight:400}.ds-wordmark i{font-style:normal;color:var(--bronze,#c8a77a)}.ds-contact{font-family:var(--sans,'Inter Tight',Arial,sans-serif);font-size:14px;padding:8px 0;border-bottom:1px solid var(--bronze,#c8a77a)}.ds-contact:hover{color:var(--bronze,#c8a77a)}.ds-nav a:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:5px}@media(max-width:680px){.ds-nav{padding:14px 16px;gap:16px}.ds-wordmark{font-size:24px}.ds-contact{font-size:13px}}"
+    },
+    {
+      "name": "Room Tile",
+      "kind": "card",
+      "description": "The flat caption-and-image frame used by room galleries; imagery is omitted from this token preview.",
+      "html": "<a class=\"ds-tile\" href=\"#\"><div class=\"ds-image\" aria-label=\"Room photograph area\"></div><div class=\"ds-caption\"><h3>Bars &amp; lounges</h3><span aria-hidden=\"true\">↗</span></div></a>",
+      "css": ".ds-tile{display:block;text-decoration:none;color:var(--paper,#f0e8da)}.ds-image{aspect-ratio:1.25;overflow:hidden;border-radius:6px;background:var(--surface,#1e1a16)}.ds-caption{display:flex;justify-content:space-between;align-items:center;padding:18px 0 10px;border-bottom:1px solid var(--line,#3a332a)}.ds-caption h3{margin:0;font-family:var(--serif,'Instrument Serif',Georgia,serif);font-size:31px;font-weight:400;line-height:1.2}.ds-caption span{color:var(--bronze,#c8a77a);font-size:23px;transition:transform .3s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-tile:hover .ds-caption span{transform:translate(3px,-3px)}.ds-tile:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-caption span{transition:none}}"
+    },
+    {
+      "name": "FAQ Disclosure",
+      "kind": "custom",
+      "description": "A ruled native disclosure with bronze state indicators.",
+      "html": "<details class=\"ds-faq\"><summary>Do I need plans or a finished idea?</summary><p>No. A few photos, approximate room dimensions and a sense of how you want to use the space make a useful starting point.</p></details>",
+      "css": ".ds-faq{border-top:1px solid var(--line,#3a332a);border-bottom:1px solid var(--line,#3a332a);font-family:var(--sans,'Inter Tight',Arial,sans-serif)}.ds-faq summary{cursor:pointer;padding:23px 34px 23px 0;position:relative;list-style:none;font-size:17px;color:var(--paper,#f0e8da)}.ds-faq summary::-webkit-details-marker{display:none}.ds-faq summary::after{content:'+';position:absolute;right:0;top:20px;font-size:24px;color:var(--bronze,#c8a77a)}.ds-faq[open] summary::after{content:'−'}.ds-faq summary:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:4px}.ds-faq p{margin:0;font-size:15px;padding:0 30px 24px 0;line-height:1.75;color:var(--muted,#bdb2a1)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Warm Private Club",
+    "overview": "The established identity is a dimly lit private club: timber and leather photography, ivory serif headlines, bronze emphasis and restrained glass navigation. Large photographic surfaces and generous space make the room the subject; controls remain quiet and legible.\n\nParchment interrupts the dark sequence for design explanation and planning. It shares the same typography and warm material character. Room detail pages extend this identity rather than introducing a separate visual language.",
+    "keyCharacteristics": [
+      "Warm photographic atmosphere with honest illustrative captions.",
+      "Large, light serif headings paired with compact sans-serif utility text.",
+      "Bronze emphasis, ivory actions and fine warm dividers.",
+      "Spacious desktop compositions that become direct mobile stacks."
+    ],
+    "rules": [
+      {
+        "name": "The Material Contrast Rule",
+        "body": "Pair light sections with their dark text colors; do not carry muted ivory copy onto parchment.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Use the serif for room atmosphere and the sans serif for decisions, explanations and controls.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "**Do** preserve the timber, leather, ivory and bronze identity across room pages.",
+      "**Do** use parchment for design explanation with the matching dark text palette.",
+      "**Do** keep meaningful room imagery legible when moving from desktop to mobile.",
+      "**Do** retain visible focus, labeled controls, reduced-motion support and persistent form feedback.",
+      "**Do** distinguish illustrative concepts from verified project photography."
+    ],
+    "donts": [
+      "**Don't** replace the established type pairing or warm palette for a new section.",
+      "**Don't** turn restrained flat gallery tiles into floating shadow cards.",
+      "**Don't** let decorative motion obscure reading or form interaction."
+    ]
+  }
+}

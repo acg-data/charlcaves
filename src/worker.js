@@ -26,13 +26,14 @@ export default {
     } catch { return reply({ error: 'Please check the form and try again.' }, 400); }
     const get = (key) => typeof data.get(key) === 'string' ? data.get(key).trim() : '';
     if (get('website')) return reply({ ok: true });
-    const name = get('name'), email = get('email'), phone = get('phone'), space = get('space'), message = get('message');
+    const name = get('name'), email = get('email'), phone = get('phone'), space = get('space'), message = get('message'), finish = get('finish');
+    if (!['', 'The Club', 'The Library', 'The Screening Room'].includes(finish)) return reply({ error: 'Please choose one of the listed finish directions.' }, 400);
     if (!name || name.length > 120 || email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || phone.length > 40 || space.length > 100 || message.length < 10 || message.length > 5000) {
       return reply({ error: 'Please add your name, a valid email and a message of 10–5,000 characters.' }, 400);
     }
     try {
-      await env.DB.prepare('INSERT INTO inquiries (id, name, email, phone, space, message) VALUES (?, ?, ?, ?, ?, ?)')
-        .bind(crypto.randomUUID(), name, email, phone, space, message).run();
+      await env.DB.prepare('INSERT INTO inquiries (id, name, email, phone, space, message, finish) VALUES (?, ?, ?, ?, ?, ?, ?)')
+        .bind(crypto.randomUUID(), name, email, phone, space, message, finish).run();
       return reply({ ok: true }, 201);
     } catch {
       console.error(JSON.stringify({ event: 'inquiry_storage_failed' }));
