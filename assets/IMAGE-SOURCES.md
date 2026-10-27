@@ -1,6 +1,15 @@
 # Site artwork
 
-The original room photos are illustrative crops supplied with the initial site. They are not verified completed projects.
+## Current deployed photographs
+
+Both images are real reference photographs under the [Unsplash License](https://unsplash.com/license), checked October 26, 2026. Neither is represented as a Charleston Caves project or workshop.
+
+- `assets/img/bar-reference.webp`: [Shawn DENG — bar interior](https://unsplash.com/photos/a-dimly-lit-bar-with-stools-and-bottles-on-the-shelves-nsgzQHsxbXE), published February 17, 2025. Used in the homepage with source and reference caption.
+- `assets/img/wood-tools.webp`: [Dominik Scythe — hand tools on a table](https://unsplash.com/photos/hand-tools-on-top-of-table-v8vz-Roj8zo), published June 11, 2017. Used as a credited material reference.
+
+## Archived artwork — not deployed
+
+The earlier generated scene and mockup crops remain in source history. The build uses an explicit allowlist and does not deploy them. The user rejected the previous synthetic imagery and concept story.
 
 ## Bar evening, version 2
 
@@ -8,7 +17,7 @@ The original room photos are illustrative crops supplied with the initial site. 
 - Source: `assets/img/bar-evening-v2.png`.
 - Optimized deployed version: `assets/img/bar-evening.webp`.
 - The five men are fictional adults; this scene does not depict the founders, real clients or a completed project.
-- Used in the homepage hero, Friday Room concept study and bars-and-lounges detail page.
+- Formerly used in the homepage, concept study and bars detail page; removed from all deployed pages.
 
 ### Generation prompt
 

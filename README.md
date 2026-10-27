@@ -1,12 +1,12 @@
 # Charleston Caves
 
-Website for Charleston Caves — custom private bars, golf rooms, home theaters and garages in Charleston, SC.
+Custom room website for Charleston Caves.
 
-Live site: https://charlestoncaves.justin-b75.workers.dev
+Live: https://charlestoncaves.justin-b75.workers.dev
 
-Static HTML, CSS and JavaScript, served by Cloudflare Workers Static Assets. The small Worker handles the inquiry form and saves submissions in a private D1 database. No business phone or email has been supplied, so neither is published and email notifications are not configured.
+Static HTML/CSS/JavaScript on Cloudflare Workers Static Assets. The Worker saves inquiries in private D1 storage. No business email or phone has been supplied; email notifications are not configured.
 
-## Preview locally
+## Local preview
 
 ```sh
 npm ci
@@ -14,9 +14,9 @@ npx wrangler d1 migrations apply charlestoncaves-inquiries --local
 npm run dev
 ```
 
-Open the local address printed by Wrangler. `npm run build` creates the homepage, six room pages and sitemap in `dist/`. Source JPEGs and PNGs remain in the repository but are not shipped. Production uses optimized WebP images, with versioned CSS and JavaScript URLs.
+The build recreates only the project's dist directory. It generates the homepage, six room guides and sitemap, fingerprints CSS/JavaScript and copies an explicit list of current assets. Archived mockup crops and generated artwork are not deployed.
 
-Room copy lives in `content/rooms.mjs`; `scripts/room-pages.mjs` generates the room pages. The homepage includes the Friday Room concept study, an illustrative floor plan, three selectable finish directions and practical FAQs. A chosen finish follows the visitor into the inquiry form and is saved with the inquiry. No founder section is included.
+Room guide content is in content/rooms.mjs. The template is scripts/room-pages.mjs.
 
 ## Deploy
 
@@ -25,28 +25,31 @@ npx wrangler d1 migrations apply charlestoncaves-inquiries --remote
 npm run deploy
 ```
 
-Cloudflare account: `b750824d7f77ea68f5630ba69e740894`. Worker: `charlestoncaves`. Inquiries database: `charlestoncaves-inquiries`. Credentials come from Wrangler login; no secrets are stored in this repository.
+Worker: charlestoncaves. D1: charlestoncaves-inquiries. Account: b750824d7f77ea68f5630ba69e740894. Credentials use Wrangler login; no secrets are stored in source.
 
 ## Read inquiries
 
-In Cloudflare, open **Storage & databases → D1 → charlestoncaves-inquiries → Console**. Run:
+Use Cloudflare → Storage & databases → D1 → charlestoncaves-inquiries → Console:
 
 ```sql
 SELECT created_at, name, email, phone, space, finish, message
 FROM inquiries ORDER BY created_at DESC;
 ```
 
-Or, from an authenticated terminal:
+Or run:
 
 ```sh
 npx wrangler d1 execute charlestoncaves-inquiries --remote --command "SELECT created_at, name, email, phone, space, finish, message FROM inquiries ORDER BY created_at DESC LIMIT 100"
 ```
 
-Submission success means the database write completed. The endpoint checks same-origin requests, field lengths, request size and required fields. A honeypot and per-IP rate limit reduce automated submissions. There is no public endpoint for listing inquiries.
+Success is shown only after the database write completes. The endpoint validates fields, origin, content type and bounded body size, with a honeypot and per-IP rate limit.
 
-## Content notes
+Finish storage keys remain compatible with existing inquiries: The Club = warm wood & leather; The Library = dark wood & brass; The Screening Room = dark, low-glare finishes. The preference is optional.
 
-- Current imagery is illustrative: the five-person bar scene is AI-generated and the remaining rooms come from supplied mockup crops. Asset provenance and the generation prompt are recorded in `assets/IMAGE-SOURCES.md`. Replace concepts with real project photography when available; update WebP files alongside the originals.
-- Confirm the supplied process and materials descriptions before advertising the site.
-- When a business email is chosen, add inquiry notifications. Until then, review D1 for submissions.
-- The free Cloudflare address is the chosen launch URL. No custom domain was purchased or connected.
+## Content and photography
+
+The current photos are licensed Unsplash references, clearly credited on the page. They are not presented as Charleston Caves projects. Sources and archival generation notes are in assets/IMAGE-SOURCES.md.
+
+The user rejected the prior generated scenes, made-up Friday Room story and ornamental luxury styling. Those are removed from the deployment. The six room guides, optional finish selection, FAQs and inquiry flow remain.
+
+No founder section, invented reviews, prices or fixed schedules are published. Real project photographs and a notification email remain future inputs. The free workers.dev address is the selected launch URL.

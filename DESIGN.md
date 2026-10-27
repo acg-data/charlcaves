@@ -1,180 +1,86 @@
 ---
 name: Charleston Caves
-description: Warm private rooms, presented through timber, leather, ivory and bronze.
+description: A direct, photographic site for custom rooms in Charleston.
 colors:
-  bronze: "#c8a77a"
-  ink: "#14120f"
-  surface: "#1e1a16"
-  paper: "#f0e8da"
-  muted: "#bdb2a1"
-  line: "#3a332a"
-  parchment: "#e6dbc7"
-  parchment-ink: "#2e271e"
-  parchment-muted: "#645341"
+  paper: "#f1f0ec"
+  ink: "#302722"
+  muted: "#655d56"
+  line: "#c8c3ba"
+  wash: "#e5e2dc"
 typography:
   display:
-    fontFamily: "Instrument Serif, Georgia, serif"
-    fontSize: "clamp(60px, 5.6vw, 82px)"
-    fontWeight: 400
-    lineHeight: 1.01
-    letterSpacing: "-.025em"
-  headline:
-    fontFamily: "Instrument Serif, Georgia, serif"
-    fontSize: "clamp(42px, 4.7vw, 68px)"
-    fontWeight: 400
-    lineHeight: 1.02
-    letterSpacing: "-.025em"
-  title:
-    fontFamily: "Instrument Serif, Georgia, serif"
-    fontSize: "31px"
-    fontWeight: 400
-    lineHeight: 1.2
+    fontFamily: "Archivo, Arial, sans-serif"
+    fontSize: "clamp(48px, 5.5vw, 84px)"
+    fontWeight: 500
+    lineHeight: 1.08
+    letterSpacing: "-.035em"
+  heading:
+    fontFamily: "Archivo, Arial, sans-serif"
+    fontSize: "clamp(34px, 3.4vw, 48px)"
+    fontWeight: 500
+    lineHeight: 1.08
   body:
-    fontFamily: "Inter Tight, Arial, sans-serif"
+    fontFamily: "Archivo, Arial, sans-serif"
     fontSize: "16px"
     fontWeight: 400
-    lineHeight: 1.6
-  label:
-    fontFamily: "Inter Tight, Arial, sans-serif"
-    fontSize: "13px"
-    fontWeight: 400
-    lineHeight: 1.6
-rounded:
-  control: "4px"
-  image: "6px"
-  enclosure: "12px"
+    lineHeight: 1.55
 spacing:
-  compact: "20px"
-  regular: "24px"
-  roomy: "32px"
-  wide: "40px"
-  section: "132px"
+  control: "24px"
+  section: "120px"
 components:
-  button-primary:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.control}"
-    padding: "15px 23px"
-  palette-option:
+  button:
+    backgroundColor: "{colors.ink}"
     textColor: "{colors.paper}"
-    rounded: "{rounded.control}"
-    padding: "10px 14px"
-  palette-option-selected:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.control}"
-    padding: "10px 14px"
-  input:
-    backgroundColor: "#14120f80"
-    textColor: "{colors.paper}"
-    rounded: "{rounded.control}"
-    padding: "12px 14px"
-    height: "49px"
-  navigation:
-    backgroundColor: "#1e1a16b8"
-    textColor: "{colors.paper}"
-    rounded: "{rounded.enclosure}"
-    padding: "16px 22px 16px 28px"
+    padding: "16px 22px"
+    height: "56px"
 ---
-
 # Design System: Charleston Caves
 
 ## Overview
+**Creative North Star: "Plainly built"**
 
-**Creative North Star: "The Warm Private Club"**
-
-The established identity is a dimly lit private club: timber and leather photography, ivory serif headlines, bronze emphasis and restrained glass navigation. Large photographic surfaces and generous space make the room the subject; controls remain quiet and legible.
-
-Parchment interrupts the dark sequence for design explanation and planning. It shares the same typography and warm material character. Room detail pages extend this identity rather than introducing a separate visual language.
+The service and the visitor’s room lead. Typography is direct, photographs are real and credited, and room guides explain actual planning decisions. The user rejected the previous generated lifestyle scenes and ornamental luxury treatment.
 
 **Key Characteristics:**
-- Warm photographic atmosphere with honest illustrative captions.
-- Large, light serif headings paired with compact sans-serif utility text.
-- Bronze emphasis, ivory actions and fine warm dividers.
-- Spacious desktop compositions that become direct mobile stacks.
+- Warm white and brown with high text contrast.
+- One sans-serif family and a compact stacked wordmark.
+- Square photographs, plain lists and native form controls.
+- Clear project inquiry as the main action.
 
 ## Colors
+Ink carries primary text and the contact section. Paper is the main surface. Muted text supports the hierarchy; wash groups process and planning information. Dividers separate actionable rows.
 
-The palette moves between dark timber tones and warm paper, with bronze as the consistent accent.
-
-### Primary
-- **Bronze:** Italic heading phrases, arrows, underlines, focus rings and small process numbers.
-
-### Neutral
-- **Ink:** Page background and text on ivory actions.
-- **Surface:** Tonal material-section background and image loading surface.
-- **Paper:** Headings, primary controls and selected palette options.
-- **Muted:** Body copy, captions and supporting labels on dark backgrounds.
-- **Line:** Gallery, process, feature and FAQ dividers.
-- **Parchment:** Design-study and room-planning backgrounds.
-- **Parchment Ink / Parchment Muted:** Heading and supporting text on light planning surfaces.
-
-**The Material Contrast Rule.** Pair light sections with their dark text colors; do not carry muted ivory copy onto parchment.
+**The Contrast Rule.** Use paper text on ink and ink text on paper. Do not place important copy over photography.
 
 ## Typography
+Archivo carries the wordmark, headlines, body and controls. Headings use medium weight; the wordmark uses bold. There are no italic display phrases or decorative labels.
 
-**Display Font:** Instrument Serif, with Georgia and serif fallbacks.
-**Body Font:** Inter Tight, with Arial and sans-serif fallbacks.
-
-The serif supplies warmth and scale; the sans serif keeps navigation, planning notes and forms economical. Headings use regular weight and short balanced lines. Italic serif phrases carry bronze emphasis.
-
-### Hierarchy
-- **Display:** The homepage uses the frontmatter display ramp; room titles use a room-specific ramp (`clamp(56px, 5.8vw, 86px)`).
-- **Headline:** Fluid section headings, with tighter sizes in room planning and related-room sections.
-- **Title:** Regular serif room captions and finish names; process and feature titles sit close to this size.
-- **Body:** The base body role governs paragraphs; introductions rise to 17-18px, supporting detail uses 15px, and disclosure captions use 11-13px.
-- **Label:** Sans-serif navigation, form labels and finish choices. Sentence case is the default.
-
-**The Two Voices Rule.** Use the serif for room atmosphere and the sans serif for decisions, explanations and controls.
+**The Plain Language Rule.** Headings name the offer, room or decision. Body copy gives useful information instead of repeating the headline.
 
 ## Layout
+Desktop uses a shared two-column alignment for the hero, section introductions, process, FAQs and inquiry. Room types are wide linked rows. The main content width caps at 1440px with 48px side margins.
 
-The desktop content container is capped at 1280px with 56px side margins. At 1000px the margins reduce to 32px; at 680px they reduce to 20px. Major section spacing steps from 132px to 100px to 76px at those breakpoints.
-
-Room galleries use two unequal columns with a 65px stagger on alternating tiles, then a single unstaggered column on mobile. Introductory, materials, concept, FAQ and room-detail compositions use paired columns before stacking. The process remains a two-column sequence on mobile. The bar detail page gives the wide gathering image its own row.
-
-Mobile puts the full-width hero photograph above the copy. Preserve the scene when choosing image crops; room atmosphere and human subjects are meaningful content. Detail figures stop sticking on mobile. The contact form collapses paired fields into a single column by 1000px.
+Below 680px the main sections stack with 20px margins and 72px section spacing. The header keeps the wordmark and project link. The room list keeps a short description beneath each title. Very narrow form rows stack.
 
 ## Elevation & Depth
-
-Depth comes from photography, tonal backgrounds and restrained borders, not box shadows. Navigation alone uses a translucent warm surface with a 22px backdrop blur. The hero uses dark directional gradients to protect text contrast. Cards remain flat; hover feedback brightens and gently scales their photographs.
-
-Motion is limited to direct feedback and one hero arrival. The shared easing is `cubic-bezier(.16,1,.3,1)`; buttons transition over 250ms, gallery imagery over 800ms and the hero arrives over 1.1s. Reduced-motion preferences disable animation, transitions and smooth scrolling.
+Photography supplies visual depth. There are no shadows, glass panels, gradients, mock textures or arrival animations. Hover feedback is a small background or color change.
 
 ## Shapes
-
-Controls and material chips have restrained corners, photographs use slightly softer corners, and navigation and the form use the largest enclosure radius. Thin rules organize content without enclosing every section. Palette choices are compact rectangular controls rather than rounded pills. The concept floor plan uses architectural linework and a fine rectangular frame.
+Photographs and controls are square. Dividers are thin and neutral. Native radio circles make the finish selection recognizable.
 
 ## Components
-
-### Buttons
-Ivory primary buttons use dark text and a separated directional arrow. They are at least 54px high on desktop and 52px on mobile. Hover warms the fill and lifts the button by 2px; active returns it to rest. Disabled submission buttons fade and use a wait cursor. Secondary text links use bronze underlines instead of filled containers.
-
-### Palette Choices
-Native radio inputs drive bordered labels. The selected label inverts to ivory with dark text; keyboard focus appears around the visible label. Selection updates the photograph, description and three labeled color samples, then carries into the inquiry. The form can also select an undecided state. Color samples remain explicitly illustrative.
-
-### Cards / Containers
-Gallery tiles combine a clipped photograph with a serif caption, bronze arrow and bottom divider. Hover scales the photograph to 1.035 and moves the arrow diagonally. Related-room tiles reuse the same component without the stagger. Light planning containers reuse parchment rather than introducing another surface color.
-
-### Inputs / Fields
-Dark translucent fields use warm strokes, visible labels and the shared control radius. Input text remains 16px on mobile. Focus uses a bronze outline with a 5px offset; hover strengthens the border. Submission keeps visible sending, success and error states, with a polite live status region. Form enclosures use a fine bronze border and a faint warm fill.
-
-### Navigation
-The serif wordmark, compact section links and underlined inquiry action sit in one translucent enclosure. At 680px the section links disappear while the wordmark and inquiry action remain. Detail pages add wrapping breadcrumbs and keep the same navigation treatment.
-
-### FAQ
-Native disclosure elements form a ruled vertical list. Sans-serif questions have bronze plus/minus indicators; expanded answers use supporting paragraph styling. Visible focus and native keyboard behavior remain intact.
+- The header links to rooms, process and inquiry; its location is secondary.
+- The hero states the offer beside a credited reference photograph.
+- Room rows link to six concise planning guides.
+- Finish radios carry preferences into the inquiry and announce selection in text.
+- Native FAQ disclosures expose practical cost, schedule and preparation guidance.
+- The inquiry has visible labels, optional preferences, validation and persistent success/error messages.
+- Buttons use ink on light sections and paper on the dark contact section.
 
 ## Do's and Don'ts
-
-### Do:
-- **Do** preserve the timber, leather, ivory and bronze identity across room pages.
-- **Do** use parchment for design explanation with the matching dark text palette.
-- **Do** keep meaningful room imagery legible when moving from desktop to mobile.
-- **Do** retain visible focus, labeled controls, reduced-motion support and persistent form feedback.
-- **Do** distinguish illustrative concepts from verified project photography.
-
-### Don't:
-- **Don't** replace the established type pairing or warm palette for a new section.
-- **Don't** turn restrained flat gallery tiles into floating shadow cards.
-- **Don't** let decorative motion obscure reading or form interaction.
+- Do use real photographs with clear source and project-status captions.
+- Do keep the inquiry and room-guide paths functional.
+- Do make content readable without animation or visual effects.
+- Don't imply reference photographs are completed projects.
+- Don't reintroduce synthetic lifestyle scenes, invented project stories or repetitive luxury slogans.
+- Don't add founders, reviews, prices or business contact details without supplied facts.
