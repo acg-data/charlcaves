@@ -1,6 +1,6 @@
 export const rooms = [
   {
-    slug: 'bars-lounges', name: 'Bars & lounges', image: 'bar-evening', imageAlt: 'Illustrative scene of five adult friends enjoying cigars in a private wood-paneled bar', detailImage: 'bar', detailAlt: 'Leather stools and illuminated shelving in a private bar concept',
+    slug: 'bars-lounges', name: 'Bars & lounges', image: 'bar-room', imageAlt: 'Bar concept with walnut cabinetry, a stone counter and five leather stools', detailImage: 'walnut-detail', detailAlt: 'Illustrative close view of walnut joinery, stone and a brass footrail',
     headline: 'The best seat<br>is <em>at home.</em>',
     intro: 'A place to open something good, settle into a familiar chair and let the conversation run a little longer.',
     description: 'Explore a private home bar and lounge built around your collection, your guests and the evenings you want to have.',
@@ -10,7 +10,7 @@ export const rooms = [
     finish: 'The Club'
   },
   {
-    slug: 'golf-rooms', name: 'Golf rooms', image: 'golf', imageAlt: 'Illustrative golf simulator room with rich wood paneling', detailImage: 'panel', detailAlt: 'Wood paneling, bronze lamp and stone ledge',
+    slug: 'golf-rooms', name: 'Golf rooms', image: 'golf-room', imageAlt: 'Golf room concept with a clear simulator bay and seating behind the hitting area', detailImage: 'walnut-detail', detailAlt: 'Illustrative walnut and stone joinery detail for an adjoining bar',
     headline: 'One more round.<br><em>Any evening.</em>',
     intro: 'Bring the practice session home, with a room that feels just as considered when the screen is off.',
     description: 'Explore an indoor golf room with space for your swing, simulator equipment and a comfortable place to watch.',
@@ -19,7 +19,7 @@ export const rooms = [
     note: 'Room suitability and equipment requirements need to be assessed before a layout is confirmed.', finish: 'The Library'
   },
   {
-    slug: 'home-theaters', name: 'Home theaters', image: 'theater', imageAlt: 'Illustrative home cinema with leather reclining chairs and a large screen', detailImage: 'leather', detailAlt: 'Close view of warm brown leather',
+    slug: 'home-theaters', name: 'Home theaters', image: 'cinema-room', imageAlt: 'Cinema concept with leather seating and walnut and acoustic wall panels', detailImage: 'leather-detail', detailAlt: 'Illustrative close view of espresso leather and wool acoustic panels',
     headline: 'Stay in.<br><em>Get carried away.</em>',
     intro: 'The opening scene, the lights down and your favorite seat. Make watching something a part of the evening.',
     description: 'Explore a home theater with considered seating, sound, lighting and a screen that suits the room.',
@@ -28,7 +28,7 @@ export const rooms = [
     note: 'Equipment and acoustic choices are project-specific and are agreed during design.', finish: 'The Screening Room'
   },
   {
-    slug: 'garages', name: 'Garages', image: 'garage', imageAlt: 'Illustrative collector garage with a green vintage sports car', detailImage: 'bronze', detailAlt: 'Warm metallic material detail',
+    slug: 'garages', name: 'Garages', image: 'garage-room', imageAlt: 'Collector garage concept with a green classic coupe and fitted walnut storage', detailImage: 'walnut-detail', detailAlt: 'Illustrative walnut joinery and brass hardware material study',
     headline: 'For what<br><em>moves you.</em>',
     intro: 'A proper home for the collection, with the room, lighting and details to enjoy it.',
     description: 'Explore a collector garage that brings vehicle storage, display and a place to sit into one considered space.',
@@ -37,7 +37,7 @@ export const rooms = [
     note: 'Floor, ventilation and building requirements are assessed for the intended use of the space.', finish: 'The Club'
   },
   {
-    slug: 'game-rooms', name: 'Game rooms', image: 'game', imageAlt: 'Illustrative billiards room with a private bar', detailImage: 'bar', detailAlt: 'Private bar seating with dark wood and warm lamps',
+    slug: 'game-rooms', name: 'Game rooms', image: 'game-room', imageAlt: 'Billiards room concept with a walnut table, brass lighting and banquette', detailImage: 'walnut-detail', detailAlt: 'Illustrative bar joinery with walnut, honed stone and brass',
     headline: 'Make an evening<br><em>of it.</em>',
     intro: 'A pool table, a favorite game and no reason to rush home. You’re already there.',
     description: 'Explore a game room with comfortable playing space, thoughtful lighting and somewhere for everyone to gather.',
@@ -46,7 +46,7 @@ export const rooms = [
     note: 'The room layout is developed around the specific equipment and furniture you choose.', finish: 'The Club'
   },
   {
-    slug: 'studies-retreats', name: 'Studies & retreats', image: 'retreat', imageAlt: 'Illustrative study with a leather armchair, records and a turntable', detailImage: 'panel', detailAlt: 'Timber wall paneling beside a warm bronze lamp',
+    slug: 'studies-retreats', name: 'Studies & retreats', image: 'study-room', imageAlt: 'Listening room concept with a leather chair, walnut shelving and record collection', detailImage: 'cabinet-detail', detailAlt: 'Illustrative walnut record drawer with brass hardware and a turntable',
     headline: 'A little room<br><em>for yourself.</em>',
     intro: 'Put on a record. Open the book. Let the rest of the house carry on without you for a while.',
     description: 'Explore a personal study or listening room built around your books, records, collections and quiet rituals.',

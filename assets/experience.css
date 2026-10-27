@@ -167,3 +167,29 @@
 }
 .materials[data-palette="library"] #wood-chip{background:#3e2d22}.materials[data-palette="library"] #leather-chip{background:#795238}.materials[data-palette="library"] #metal-chip{background:#b09560}
 .materials[data-palette="screening"] #wood-chip{background:#2b211c}.materials[data-palette="screening"] #leather-chip{background:#3f2c25}.materials[data-palette="screening"] #metal-chip{background:#45433d}
+
+/* Property planning extends the existing timber, ivory and bronze design. */
+.home-planning { display:grid; grid-template-columns:1.1fr 1fr; gap:90px; padding-block:60px; border-block:1px solid var(--line); }
+.home-planning>div>p { margin-top:26px; max-width:430px; }
+.planning-questions h3 { font-size:29px; }
+.planning-questions dl { margin:26px 0 0; }
+.planning-questions dl>div { padding:18px 0; border-top:1px solid var(--line); }
+.planning-questions dt { color:var(--paper); font-size:15px; }
+.planning-questions dd { margin:6px 0 0; color:var(--muted); font-size:15px; line-height:1.7; }
+.planning-questions>p { font-size:13px; }
+.field-note { font-size:12px; margin-top:-14px; }
+.form-extras { border-top:1px solid var(--line); padding-top:15px; }
+.form-extras summary { cursor:pointer; font-size:13px; color:var(--muted); }
+.form-extras summary:focus-visible { outline:2px solid var(--bronze); outline-offset:5px; }
+.form-extras label { margin-top:15px; }
+.space-image,.related-grid .space-image { aspect-ratio:3/2; }
+.concept-scene img,.material-photo>img,.room-intro figure img,
+.room-page[data-room=bars-lounges] .room-intro figure img,.room-details>figure img { aspect-ratio:3/2; height:auto; object-fit:contain; }
+@media(max-width:1000px) {
+  .home-planning { gap:42px; }
+}
+@media(max-width:680px) {
+  .home-planning { grid-template-columns:1fr; gap:36px; padding-block:38px; }
+  .home-planning>div>p { margin-top:20px; }
+  .planning-questions h3 { font-size:27px; }
+}

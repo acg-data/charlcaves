@@ -16,9 +16,13 @@ npm run dev
 
 Open the local address printed by Wrangler. `npm run build` creates the homepage, six room pages and sitemap in `dist/`. Source JPEGs and PNGs remain in the repository but are not shipped. Production uses optimized WebP images, with versioned CSS and JavaScript URLs.
 
-Room copy lives in `content/rooms.mjs`; `scripts/room-pages.mjs` generates the room pages. The homepage includes the Friday Room concept study, an illustrative floor plan, three selectable finish directions and practical FAQs. A chosen finish follows the visitor into the inquiry form and is saved with the inquiry. No founder section is included.
+Room copy lives in `content/rooms.mjs`; `scripts/room-pages.mjs` generates the room pages. The homepage includes property-planning guidance, the Friday Room concept study, an illustrative floor plan, three selectable finish directions and practical FAQs. A chosen finish follows the visitor into the inquiry form and is saved with the inquiry. No founder section is included.
 
-The original dark visual design is restored at the user's request. Mobile room photographs retain their natural proportions instead of being cropped into landscape frames. The mobile hero image flows above its copy, and finish previews use a stable contain frame. Image dimensions match the files to reserve space before loading. Desktop styling is preserved.
+The original dark visual identity is preserved at the user's request. Nine new room/material concepts replace the soft mockup crops, with 480, 960 and 1536-pixel WebP variants selected through `srcset`. The hero retains the five-person gathering; it appears only once. Room and finish images retain full 3:2 compositions, and the mobile hero image flows above its copy. Image dimensions reserve space before loading.
+
+The inquiry starts with property stage (own a home, house hunting, planning a new build, or exploring). An optional public listing/floor-plan URL is stored with the inquiry. The server validates its scheme and length but never fetches it. Optional finish selection sits behind a disclosure. Migration `0003_property_context.sql` adds both property fields without removing existing data or breaking older cached forms.
+
+Run `npm test` for inquiry validation and persistence failure tests. A local browser submission verifies the complete form and D1 integration.
 
 ## Deploy
 
@@ -34,21 +38,21 @@ Cloudflare account: `b750824d7f77ea68f5630ba69e740894`. Worker: `charlestoncaves
 In Cloudflare, open **Storage & databases → D1 → charlestoncaves-inquiries → Console**. Run:
 
 ```sql
-SELECT created_at, name, email, phone, space, finish, message
+SELECT created_at, name, email, phone, property_stage, property_url, space, finish, message
 FROM inquiries ORDER BY created_at DESC;
 ```
 
 Or, from an authenticated terminal:
 
 ```sh
-npx wrangler d1 execute charlestoncaves-inquiries --remote --command "SELECT created_at, name, email, phone, space, finish, message FROM inquiries ORDER BY created_at DESC LIMIT 100"
+npx wrangler d1 execute charlestoncaves-inquiries --remote --command "SELECT created_at, name, email, phone, property_stage, property_url, space, finish, message FROM inquiries ORDER BY created_at DESC LIMIT 100"
 ```
 
 Submission success means the database write completed. The endpoint checks same-origin requests, field lengths, request size and required fields. A honeypot and per-IP rate limit reduce automated submissions. There is no public endpoint for listing inquiries.
 
 ## Content notes
 
-- Current imagery is illustrative: the five-person bar scene is AI-generated and the remaining rooms come from supplied mockup crops. Asset provenance and the generation prompt are recorded in `assets/IMAGE-SOURCES.md`. Replace concepts with real project photography when available; update WebP files alongside the originals.
+- Current imagery is AI-generated concept artwork. Asset provenance, actual dimensions and the saved prompt set are recorded in `assets/IMAGE-SOURCES.md` and `assets/IMAGE-PROMPTS.json`. Replace concepts with real project photography when available; update all responsive variants alongside the originals.
 - Confirm the supplied process and materials descriptions before advertising the site.
 - When a business email is chosen, add inquiry notifications. Until then, review D1 for submissions.
 - The free Cloudflare address is the chosen launch URL. No custom domain was purchased or connected.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-27T01:10:49.647Z",
+  "generatedAt": "2026-10-27T12:44:40.015Z",
   "title": "Design System: Charleston Caves",
   "extensions": {
     "colorMeta": {
@@ -230,9 +230,9 @@
     {
       "name": "Room Tile",
       "kind": "card",
-      "description": "The flat caption-and-image frame used by room galleries; imagery is omitted from this token preview.",
+      "description": "The full 3:2 image frame and ruled caption used by room galleries; imagery is omitted from this token preview.",
       "html": "<a class=\"ds-tile\" href=\"#\"><div class=\"ds-image\" aria-label=\"Room photograph area\"></div><div class=\"ds-caption\"><h3>Bars &amp; lounges</h3><span aria-hidden=\"true\">↗</span></div></a>",
-      "css": ".ds-tile{display:block;text-decoration:none;color:var(--paper,#f0e8da)}.ds-image{aspect-ratio:1.25;overflow:hidden;border-radius:6px;background:var(--surface,#1e1a16)}.ds-caption{display:flex;justify-content:space-between;align-items:center;padding:18px 0 10px;border-bottom:1px solid var(--line,#3a332a)}.ds-caption h3{margin:0;font-family:var(--serif,'Instrument Serif',Georgia,serif);font-size:31px;font-weight:400;line-height:1.2}.ds-caption span{color:var(--bronze,#c8a77a);font-size:23px;transition:transform .3s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-tile:hover .ds-caption span{transform:translate(3px,-3px)}.ds-tile:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-caption span{transition:none}}"
+      "css": ".ds-tile{display:block;text-decoration:none;color:var(--paper,#f0e8da)}.ds-image{aspect-ratio:3/2;overflow:hidden;border-radius:6px;background:var(--surface,#1e1a16)}.ds-caption{display:flex;justify-content:space-between;align-items:center;padding:18px 0 10px;border-bottom:1px solid var(--line,#3a332a)}.ds-caption h3{margin:0;font-family:var(--serif,'Instrument Serif',Georgia,serif);font-size:31px;font-weight:400;line-height:1.2}.ds-caption span{color:var(--bronze,#c8a77a);font-size:23px;transition:transform .3s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-tile:hover .ds-caption span{transform:translate(3px,-3px)}.ds-tile:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-caption span{transition:none}}"
     },
     {
       "name": "FAQ Disclosure",
@@ -240,6 +240,13 @@
       "description": "A ruled native disclosure with bronze state indicators.",
       "html": "<details class=\"ds-faq\"><summary>Do I need plans or a finished idea?</summary><p>No. A few photos, approximate room dimensions and a sense of how you want to use the space make a useful starting point.</p></details>",
       "css": ".ds-faq{border-top:1px solid var(--line,#3a332a);border-bottom:1px solid var(--line,#3a332a);font-family:var(--sans,'Inter Tight',Arial,sans-serif)}.ds-faq summary{cursor:pointer;padding:23px 34px 23px 0;position:relative;list-style:none;font-size:17px;color:var(--paper,#f0e8da)}.ds-faq summary::-webkit-details-marker{display:none}.ds-faq summary::after{content:'+';position:absolute;right:0;top:20px;font-size:24px;color:var(--bronze,#c8a77a)}.ds-faq[open] summary::after{content:'−'}.ds-faq summary:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:4px}.ds-faq p{margin:0;font-size:15px;padding:0 30px 24px 0;line-height:1.75;color:var(--muted,#bdb2a1)}"
+    },
+    {
+      "name": "Optional Form Details",
+      "kind": "custom",
+      "description": "A native disclosure keeps optional finish selection secondary to the project inquiry.",
+      "html": "<details class=\"ds-extras\"><summary>Have a finish in mind? (optional)</summary><label class=\"ds-extras-label\">Finish direction<select class=\"ds-extras-select\"><option>I’m still exploring</option><option>The Club</option><option>The Library</option><option>The Screening Room</option></select></label></details>",
+      "css": ".ds-extras{border-top:1px solid var(--line,#3a332a);padding-top:15px;font-family:var(--sans,\"Inter Tight\",Arial,sans-serif)}.ds-extras summary{cursor:pointer;font-size:13px;color:var(--muted,#bdb2a1)}.ds-extras summary:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:5px}.ds-extras-label{display:flex;flex-direction:column;gap:8px;margin-top:15px;font-size:13px;color:var(--paper,#f0e8da)}.ds-extras-select{box-sizing:border-box;width:100%;height:49px;padding:12px 14px;color:var(--paper,#f0e8da);background:#14120f80;border:1px solid #74634e;border-radius:4px;font:16px var(--sans,\"Inter Tight\",Arial,sans-serif);transition:border-color .2s}.ds-extras-select:hover{border-color:var(--bronze,#c8a77a)}.ds-extras-select:focus-visible{outline:2px solid var(--bronze,#c8a77a);outline-offset:5px}.ds-extras-select option{background:var(--ink,#14120f)}@media(prefers-reduced-motion:reduce){.ds-extras-select{transition:none}}"
     }
   ],
   "narrative": {

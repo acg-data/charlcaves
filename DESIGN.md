@@ -129,11 +129,11 @@ The serif supplies warmth and scale; the sans serif keeps navigation, planning n
 
 ## Layout
 
-On phones and tablets, room photography keeps its natural proportions and complete composition. The mobile hero image sits in normal flow above its copy; no fixed-height overlay darkens or covers it. Finish photographs use a consistent square contain frame so changing the selection does not move the controls. Desktop compositions remain unchanged.
+Room concepts, room detail photographs and finish previews use the full 3:2 composition on desktop and mobile. The consistent landscape finish frame keeps controls stable when the selected material study changes. Responsive WebP variants preserve the same composition. The five-person bar scene remains the distinct hero; on mobile it sits in normal flow above the copy, without a fixed-height overlay darkening or covering it.
 
 The desktop content container is capped at 1280px with 56px side margins. At 1000px the margins reduce to 32px; at 680px they reduce to 20px. Major section spacing steps from 132px to 100px to 76px at those breakpoints.
 
-Room galleries use two unequal columns with a 65px stagger on alternating tiles, then a single unstaggered column on mobile. Introductory, materials, concept, FAQ and room-detail compositions use paired columns before stacking. The process remains a two-column sequence on mobile. The bar detail page gives the wide gathering image its own row.
+Room galleries use two unequal columns with a 65px stagger on alternating tiles, then a single unstaggered column on mobile. Introductory, materials, concept, FAQ and room-detail compositions use paired columns before stacking. The process remains a two-column sequence on mobile. The bar detail page gives the wide room image its own row. Property planning uses a ruled two-column composition, with its introduction beside a list of planning considerations; it stacks at the mobile breakpoint.
 
 Mobile puts the full-width hero photograph above the copy. Preserve the scene when choosing image crops; room atmosphere and human subjects are meaningful content. Detail figures stop sticking on mobile. The contact form collapses paired fields into a single column by 1000px.
 
@@ -153,16 +153,16 @@ Controls and material chips have restrained corners, photographs use slightly so
 Ivory primary buttons use dark text and a separated directional arrow. They are at least 54px high on desktop and 52px on mobile. Hover warms the fill and lifts the button by 2px; active returns it to rest. Disabled submission buttons fade and use a wait cursor. Secondary text links use bronze underlines instead of filled containers.
 
 ### Palette Choices
-Native radio inputs drive bordered labels. The selected label inverts to ivory with dark text; keyboard focus appears around the visible label. Selection updates the photograph, description and three labeled color samples, then carries into the inquiry. The form can also select an undecided state. Color samples remain explicitly illustrative.
+Native radio inputs drive bordered labels. The selected label inverts to ivory with dark text; keyboard focus appears around the visible label. Selection updates the photograph, description and three labeled color samples, then carries into the inquiry. The palette action opens the optional finish disclosure in the form. The form can also select an undecided state. Color samples remain explicitly illustrative.
 
 ### Cards / Containers
-Gallery tiles combine a clipped photograph with a serif caption, bronze arrow and bottom divider. Hover scales the photograph to 1.035 and moves the arrow diagonally. Related-room tiles reuse the same component without the stagger. Light planning containers reuse parchment rather than introducing another surface color.
+Gallery tiles combine a full 3:2 photograph in a rounded frame with a serif caption, bronze arrow and bottom divider. Desktop hover scales the photograph to 1.035 and moves the arrow diagonally; photo scaling is disabled at tablet and phone sizes to preserve the composition. Related-room tiles reuse the same component without the stagger. Light planning containers reuse parchment rather than introducing another surface color.
 
 ### Inputs / Fields
-Dark translucent fields use warm strokes, visible labels and the shared control radius. Input text remains 16px on mobile. Focus uses a bronze outline with a 5px offset; hover strengthens the border. Submission keeps visible sending, success and error states, with a polite live status region. Form enclosures use a fine bronze border and a faint warm fill.
+Dark translucent fields use warm strokes, visible labels and the shared control radius. Input text remains 16px on mobile. Focus uses a bronze outline with a 5px offset; hover strengthens the border. Submission keeps visible sending, success and error states, with a polite live status region. Form enclosures use a fine bronze border and a faint warm fill. The inquiry begins with a required property-stage selection. An optional public listing or floor-plan link uses the same field styling with a small supporting note. Optional finish selection sits behind a native disclosure with a top rule, compact muted summary and visible focus. The property-planning action prefills the house-hunting stage.
 
 ### Navigation
-The serif wordmark, compact section links and underlined inquiry action sit in one translucent enclosure. At 680px the section links disappear while the wordmark and inquiry action remain. Detail pages add wrapping breadcrumbs and keep the same navigation treatment.
+The serif wordmark, compact section links and underlined inquiry action sit in one translucent enclosure. The property-planning entry uses the direct label “Buying a home?” alongside room, finish and process links. At 680px the section links disappear while the wordmark and inquiry action remain. Detail pages add wrapping breadcrumbs and keep the same navigation treatment.
 
 ### FAQ
 Native disclosure elements form a ruled vertical list. Sans-serif questions have bronze plus/minus indicators; expanded answers use supporting paragraph styling. Visible focus and native keyboard behavior remain intact.

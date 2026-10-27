@@ -1,0 +1,2 @@
+ALTER TABLE inquiries ADD COLUMN property_stage TEXT NOT NULL DEFAULT '';
+ALTER TABLE inquiries ADD COLUMN property_url TEXT NOT NULL DEFAULT '';
