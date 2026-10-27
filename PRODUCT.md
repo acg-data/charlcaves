@@ -1,24 +1,25 @@
 # Charleston Caves
+
 <!-- impeccable:product-schema 1 -->
 
 ## Platform
 web
 
 ## Product Purpose
-Help Charleston homeowners explore home bars, golf rooms, theaters, garages, game rooms and studies, then submit a project inquiry.
+Help Charleston homeowners explore private bars, golf rooms, home theaters, garages, game rooms and studies, then submit an inquiry about their space.
 
 ## Stack
-Static HTML, CSS and JavaScript. A build script generates six room guides. Cloudflare Workers serves the site and stores inquiries in D1.
+Existing static HTML, CSS and JavaScript with a small build script. Cloudflare Workers serves static assets and stores inquiries in D1.
 
-## Current Direction
-The user rejected the prior version as AI sloppiness across the imagery, wording and layout. The current revision removes generated scenes, the fictional Friday Room story, the decorative floor plan, glass navigation and repetitive luxury copy. Use direct language, simple page structure and real photography clearly credited as reference material. Do not revive the rejected imagery or invented portfolio.
+## Confirmed Direction
+The user clarified that they preferred this original design and imagery. Their concern was the mobile image presentation. Restore this visual identity and content; fix responsive sizing and cropping without redesigning the site or replacing the photographs.
 
-Keep the six room routes, practical planning guidance, finish preferences and the working inquiry form. Prefer actual project photographs when the business supplies them.
+The user approved richer room detail pages, a clearly labeled concept story, a warm parchment design section, an interactive finish selector and practical FAQs. The hero should feature exactly five adult men socializing and smoking cigars in a warm private bar.
 
 ## Evidence and Constraints
-The two current photos are licensed Unsplash reference photographs, not Charleston Caves projects. No completed-project claims, testimonials, prices or fixed timelines have been supplied. The user declined a founder section. No business email or phone is published. Inquiries save to D1; email notifications are not configured.
+Existing room imagery consists of illustrative mockup crops. The new bar image is AI-generated concept artwork. No completed-project claims, client testimonials, fixed prices or timelines have been supplied. Do not imply that concept scenes depict actual clients.
 
-The selected launch URL is charlestoncaves.justin-b75.workers.dev.
+The user explicitly declined a founder/people section. No business email or phone is to be published yet. Inquiries save to D1; email notifications are not configured. The confirmed launch address is charlestoncaves.justin-b75.workers.dev.
 
-## Open Facts
-Actual project photography, exact service boundary, pricing, typical duration and notification inbox remain to be supplied.
+## Open Decisions
+Real project photography, exact service boundary, project pricing, typical duration, notification inbox and business contact information await supplied facts.

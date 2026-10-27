@@ -1,74 +1,57 @@
 export const rooms = [
-{
-slug:'bars-lounges',name:'Bars & lounges',title:'Home bars & lounges',
-intro:'A home bar needs to work as well as it looks. Start with seating, storage and the equipment you actually plan to use.',
-description:'Plan a home bar in Charleston: seating, bottle storage, refrigeration, lighting and ventilation.',
-features:[
-['Counter and seating','Decide how many people the bar needs to seat, where drinks will be prepared and how people will move past occupied stools.'],
-['Storage and equipment','Allow for bottles, glasses, refrigeration, ice and a sink if needed. Plumbing and electrical access affect the layout.'],
-['Lighting and ventilation','Keep task lighting on the counter and softer light over seating. If you plan to smoke cigars, discuss ventilation and separation from the house at the start.']
-],
-planning:['How many seats do you want?','Will the bar need plumbing or refrigeration?','Do you want a separate lounge area?'],
-note:'Room dimensions, existing utilities and the way you host set the scope.',finish:'The Club'
-},
-{
-slug:'golf-rooms',name:'Golf rooms',title:'Golf rooms',
-intro:'The first question is whether the room fits your swing. Equipment, seating and finishes come after the clearances are understood.',
-description:'Plan an indoor golf room in Charleston with swing clearance, simulator equipment, lighting and storage.',
-features:[
-['Swing clearance','Check ceiling height, room width and depth for the players using it. Include both right- and left-handed players in the layout if needed.'],
-['Equipment layout','The launch monitor, screen, projector and hitting mat need to work together. Check the manufacturer’s requirements before fixing positions.'],
-['Light, cables and storage','Plan light control around the screen, safe cable routes and storage for clubs. Keep seating outside the swing area.']
-],
-planning:['What are the room’s width, depth and ceiling height?','Will right- and left-handed players share the room?','Have you chosen a simulator?'],
-note:'A room needs to be assessed against the chosen equipment before its layout is confirmed.',finish:'The Library'
-},
-{
-slug:'home-theaters',name:'Home theaters',title:'Home theaters',
-intro:'Start with the number of seats and what you watch. Screen size, sound and lighting should follow the room.',
-description:'Plan a home theater in Charleston: seating, screen placement, sound control and equipment access.',
-features:[
-['Seating and sightlines','Work out the seating positions before choosing a screen size. Every seat needs a clear view and a comfortable viewing distance.'],
-['Sound and nearby rooms','Speaker placement and acoustic treatment belong in the plan. Consider the rooms beside, above and below the theater.'],
-['Lighting and equipment','Allow for dimmable lighting, cable routes and ventilation around equipment. Controls and maintenance access should be easy to reach.']
-],
-planning:['How many people will usually watch together?','Films, sports, games or a mix?','What is on the other side of the walls?'],
-note:'Equipment and acoustic requirements are specific to each room.',finish:'The Screening Room'
-},
-{
-slug:'garages',name:'Garages',title:'Garages',
-intro:'Make space for the cars, the tools and the work you want to do. A useful layout starts with access.',
-description:'Plan a custom garage in Charleston with vehicle access, work surfaces, storage and lighting.',
-features:[
-['Access and clearance','Measure the vehicles, door openings and walking routes. Include space to open doors and reach storage.'],
-['Storage and work surfaces','Keep frequently used tools close to the workbench. Plan separate places for bulky equipment, parts and things that need secure storage.'],
-['Floor, light and services','The intended use affects floor finishes, lighting, power and ventilation. Address those requirements before selecting decorative finishes.']
-],
-planning:['Which vehicles and equipment need to fit?','Will you work on cars, display them or both?','What needs to be within easy reach?'],
-note:'Building and ventilation requirements depend on the intended use.',finish:'The Club'
-},
-{
-slug:'game-rooms',name:'Game rooms',title:'Game rooms',
-intro:'Choose the games first. The table or setup, the players and the people watching all need room.',
-description:'Plan a game room in Charleston with table clearances, lighting, equipment storage and seating.',
-features:[
-['Playing space','Check the full clearance around a pool table, card table or other equipment. The footprint alone does not tell you whether it fits.'],
-['Lighting and power','Light the playing surface without glare. Include outlets and cable routes for screens, consoles or powered games.'],
-['Seating and storage','Keep seats and drinks clear of play. Give cues, boards and other equipment a place when the room is not in use.']
-],
-planning:['Which games matter most?','How many people normally get together?','Do you want a bar or seating area too?'],
-note:'Clearances are checked against the furniture and equipment you choose.',finish:'The Club'
-},
-{
-slug:'studies-retreats',name:'Studies & retreats',title:'Studies & listening rooms',
-intro:'A desk, books, records or simply a quiet chair. Define what the room needs to hold and how you want to use it.',
-description:'Plan a study or listening room in Charleston with shelving, seating, lighting and room for your collection.',
-features:[
-['Shelving and collections','Measure the books, records and objects that need storage. Allow for the collection to grow and for the weight the shelves must carry.'],
-['Seating and light','Place the desk or chair for daylight, reading light and access to outlets. Consider glare on a screen or work surface.'],
-['Sound and privacy','For a listening room, plan the speakers and listening position together. Discuss how much separation you need from the rest of the house.']
-],
-planning:['Work, reading, music or a combination?','Which furniture and collections are coming with you?','How quiet does the room need to be?'],
-note:'Existing furniture dimensions and a few reference images are useful starting points.',finish:'The Library'
-}
+  {
+    slug: 'bars-lounges', name: 'Bars & lounges', image: 'bar-evening', imageAlt: 'Illustrative scene of five adult friends enjoying cigars in a private wood-paneled bar', detailImage: 'bar', detailAlt: 'Leather stools and illuminated shelving in a private bar concept',
+    headline: 'The best seat<br>is <em>at home.</em>',
+    intro: 'A place to open something good, settle into a familiar chair and let the conversation run a little longer.',
+    description: 'Explore a private home bar and lounge built around your collection, your guests and the evenings you want to have.',
+    features: [['A bar that works for you', 'Consider the counter, storage and seating together. Your collection and the way you host set the starting point.'], ['Lighting for the evening', 'Layered lamps and softly lit shelves can create atmosphere without leaving the practical surfaces in the dark.'], ['Somewhere to stay awhile', 'Leather seating, a separate lounge area and room to circulate make the space about more than the bar itself.']],
+    planning: ['How many people would you like to seat?', 'What would you like to display or keep out of sight?', 'Would a sink, refrigeration or a separate lounge be part of the brief?'],
+    note: 'If cigar use is part of your vision, ventilation and separation from adjoining rooms belong in the initial planning conversation.',
+    finish: 'The Club'
+  },
+  {
+    slug: 'golf-rooms', name: 'Golf rooms', image: 'golf', imageAlt: 'Illustrative golf simulator room with rich wood paneling', detailImage: 'panel', detailAlt: 'Wood paneling, bronze lamp and stone ledge',
+    headline: 'One more round.<br><em>Any evening.</em>',
+    intro: 'Bring the practice session home, with a room that feels just as considered when the screen is off.',
+    description: 'Explore an indoor golf room with space for your swing, simulator equipment and a comfortable place to watch.',
+    features: [['Room for your swing', 'Ceiling height, hitting position and clearances come first. The design starts with the available room and the players who will use it.'], ['Technology, thoughtfully placed', 'Discuss the launch monitor, screen, projector and cable routes as part of one room plan.'], ['A place between rounds', 'Seating and club storage can make the room useful for practice, company and downtime.']],
+    planning: ['What are the room’s approximate width, depth and ceiling height?', 'Will both right- and left-handed players use it?', 'Do you already have simulator equipment in mind?'],
+    note: 'Room suitability and equipment requirements need to be assessed before a layout is confirmed.', finish: 'The Library'
+  },
+  {
+    slug: 'home-theaters', name: 'Home theaters', image: 'theater', imageAlt: 'Illustrative home cinema with leather reclining chairs and a large screen', detailImage: 'leather', detailAlt: 'Close view of warm brown leather',
+    headline: 'Stay in.<br><em>Get carried away.</em>',
+    intro: 'The opening scene, the lights down and your favorite seat. Make watching something a part of the evening.',
+    description: 'Explore a home theater with considered seating, sound, lighting and a screen that suits the room.',
+    features: [['The right view from every seat', 'Screen placement and seating distance shape the room. Start with who watches, what they watch and how they like to settle in.'], ['Sound belongs in the plan', 'Acoustic treatments, speaker locations and sound transfer to nearby rooms are design considerations from the beginning.'], ['A gentle fade to dark', 'Discuss dimmable lighting, concealed equipment and the everyday controls that make the room easy to use.']],
+    planning: ['How many seats would make the room feel right?', 'Is it mainly for films, sports, games or all three?', 'Which rooms sit beside, above or below the theater?'],
+    note: 'Equipment and acoustic choices are project-specific and are agreed during design.', finish: 'The Screening Room'
+  },
+  {
+    slug: 'garages', name: 'Garages', image: 'garage', imageAlt: 'Illustrative collector garage with a green vintage sports car', detailImage: 'bronze', detailAlt: 'Warm metallic material detail',
+    headline: 'For what<br><em>moves you.</em>',
+    intro: 'A proper home for the collection, with the room, lighting and details to enjoy it.',
+    description: 'Explore a collector garage that brings vehicle storage, display and a place to sit into one considered space.',
+    features: [['Space to move', 'Vehicle sizes, door openings, access routes and storage needs give the layout its practical foundation.'], ['Put the collection in its best light', 'Think about lighting, wall finishes and display shelving as part of the room around the cars.'], ['A reason to linger', 'A seating area or work surface can make the garage part of your time at home, beyond parking.']],
+    planning: ['Which vehicles and equipment need a place?', 'Will you work on cars, display them or both?', 'What storage needs to be easy to reach?'],
+    note: 'Floor, ventilation and building requirements are assessed for the intended use of the space.', finish: 'The Club'
+  },
+  {
+    slug: 'game-rooms', name: 'Game rooms', image: 'game', imageAlt: 'Illustrative billiards room with a private bar', detailImage: 'bar', detailAlt: 'Private bar seating with dark wood and warm lamps',
+    headline: 'Make an evening<br><em>of it.</em>',
+    intro: 'A pool table, a favorite game and no reason to rush home. You’re already there.',
+    description: 'Explore a game room with comfortable playing space, thoughtful lighting and somewhere for everyone to gather.',
+    features: [['Start with the game', 'A billiards table, card table or games setup needs clearances as well as a place on the plan.'], ['Keep the conversation going', 'Seating, a drinks ledge or an adjoining bar can connect the game to the rest of the evening.'], ['Give everything a home', 'Plan storage for cues, games and equipment so the space feels considered between visits.']],
+    planning: ['Which games will anchor the room?', 'How many people usually get together?', 'Would you like a bar or lounge alongside the playing area?'],
+    note: 'The room layout is developed around the specific equipment and furniture you choose.', finish: 'The Club'
+  },
+  {
+    slug: 'studies-retreats', name: 'Studies & retreats', image: 'retreat', imageAlt: 'Illustrative study with a leather armchair, records and a turntable', detailImage: 'panel', detailAlt: 'Timber wall paneling beside a warm bronze lamp',
+    headline: 'A little room<br><em>for yourself.</em>',
+    intro: 'Put on a record. Open the book. Let the rest of the house carry on without you for a while.',
+    description: 'Explore a personal study or listening room built around your books, records, collections and quiet rituals.',
+    features: [['Your collection, considered', 'Books, records and favorite objects can shape the shelving, proportions and character of the room.'], ['Find your favorite corner', 'Comfortable seating, a reading light and the right surface for a cup or a glass make a small corner feel complete.'], ['Balance focus and retreat', 'Decide whether the space needs a desk, a listening position, a conversation area or a little of each.']],
+    planning: ['What would you most like to do in this room?', 'Which collections or pieces of furniture belong here?', 'Should it feel open to the house or tucked away?'],
+    note: 'Bring a few references and the dimensions of anything you already love. They are useful starting points.', finish: 'The Library'
+  }
 ];
